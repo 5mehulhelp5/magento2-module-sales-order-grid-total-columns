@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Aimane Couissi - https://aimanecouissi.com
+ * Copyright © Aimane Couissi 2025–present. All rights reserved.
+ * Licensed under the MIT License. See LICENSE for details.
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+        <column name="grand_total" sortOrder="70"/>
+        <column name="base_total_paid" sortOrder="80" class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Paid (Base)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="total_paid" sortOrder="81" class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Paid (Purchased)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="base_total_due" sortOrder="82" class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Due (Base)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="total_due" sortOrder="83" class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Due (Purchased)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="base_total_invoiced" sortOrder="84"
+                class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Invoiced (Base)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="total_invoiced" sortOrder="85" class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Invoiced (Purchased)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="base_total_refunded" sortOrder="86"
+                class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Refunded (Base)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="total_refunded" sortOrder="87" class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Refunded (Purchased)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="base_total_canceled" sortOrder="88"
+                class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Canceled (Base)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+        <column name="total_canceled" sortOrder="89" class="Magento\Sales\Ui\Component\Listing\Column\PurchasedPrice">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">Total Canceled (Purchased)</label>
+                <visible>false</visible>
+            </settings>
+        </column>
+    </columns>
+</listing>
